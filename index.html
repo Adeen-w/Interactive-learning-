@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header id="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="c:\Users\Dell Book\Downloads\LEARN X.png" width="120px">
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#modules">Modules</a></li>
+                    <li><a href="#quizzes">Quizzes</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+            <div class="search-bar">
+                <input type="text" placeholder="Search for topics...">
+                <button onclick="search()">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home">
+        <div class="hero-content">
+            <h2>Explore the World of Science</h2>
+            <p>Dive deep into interactive learning modules designed to make science fun and engaging.</p>
+            <button class="cta-btn" onclick="scrollToSection('modules')">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Modules Section -->
+    <section id="modules" class="section">
+        <div class="container">
+            <h2>Learning Modules</h2>
+            <div class="module-grid">
+                <div class="module-card" onclick="showDetails('Physics')">
+                    <h3>Physics</h3>
+                    <p>Learn about motion, forces, and the fundamental laws of the universe.</p>
+                </div>
+                <div class="module-card" onclick="showDetails('Chemistry')">
+                    <h3>Chemistry</h3>
+                    <p>Explore the interactions of atoms, molecules, and the magic of reactions.</p>
+                </div>
+                <div class="module-card" onclick="showDetails('Biology')">
+                    <h3>Biology</h3>
+                    <p>Dive into the world of living organisms and ecosystems.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quizzes Section -->
+    <section id="quizzes" class="section">
+        <div class="container">
+            <h2>Interactive Quizzes</h2>
+            <div class="quiz-grid">
+                <div class="quiz-card" onclick="startQuiz('Physics Quiz')">
+                    <h3>Physics Quiz</h3>
+                    <p>Test your knowledge of physical laws and phenomena.</p>
+                </div>
+                <div class="quiz-card" onclick="startQuiz('Chemistry Quiz')">
+                    <h3>Chemistry Quiz</h3>
+                    <p>Challenge your understanding of chemical reactions.</p>
+                </div>
+                <div class="quiz-card" onclick="startQuiz('Biology Quiz')">
+                    <h3>Biology Quiz</h3>
+                    <p>Evaluate your grasp on the science of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>At LearnX, we are dedicated to transforming education through interactive and engaging content. Our mission is to make science accessible, fun, and interesting for everyone, no matter their level of expertise.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 LearnX - All Rights Reserved</p>
+            <ul class="footer-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#modules">Modules</a></li>
+                <li><a href="#quizzes">Quizzes</a></li>
+                <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
